@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Character Builder</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/scripts.js"></script>
+  </head>
+<body>
+  <h1>We'll help you create a character!</h1>
+  <p>Enter your character's name and choose different stuff.</p>
+  <form id="generator">
+    <label for="input1">Character Name:</label>
+    <input id="input1" type="text">
+
+  <h1>Choose a game genre</h1>
+    <select id="setting">
+      <option>Fantasy</option>
+      <option>Sci-Fi</option>
+      <option>Pirates</option>
+      <option>Horror</option>
+    </select>
+  
+  <h1>Choose a character type</h1>
+    <label>
+      <input type="radio" name="job" value="Fighter">
+      Fighter
+    </label>
+    <label>
+      <input type="radio" name="job" value="Wizard">
+      Wizard
+    </label>
+    <label>
+      <input type="radio" name="job" value="Priest">
+      Priest
+    </label>
+    <label>
+      <input type="radio" name="job" value="Thief">
+      Thief
+    </label>
+    <br>
+    <br>
+
+    <button type="submit">Submit Character</button>
+  </form>
+
+  <div id = "story" class="hidden">
+    <h1>Your Character:</h1>
+    <p>
+      Your character <span id="name"></span> is a <span id="job"></span> in a  <span id="setting"></span> setting. They are ready to embark on an adventure!
+    </p>
+  </div>
+
+</body>
+</html>
